@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href = "books.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <script src="Final.js"></script>
+
+</head>
+  <body onload="search('a')">
+    <style>
+    body{
+      background-color: white;
+    }
+    </style>
+    <p class = "title">
+       <strong> BOOKS </strong>
+       <p class = "login">FIND ALL THE BOOKS YOU NEED!</p>
+    </p>
+    <nav class="navbar navbar-light" style="background-color: #c3d7db;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="books.html">BOOKBOPS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="file:///C:/Users/GWC/Documents/finalproject.html">HOME<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="file:///C:/Users/GWC/Documents/books.html">BOOKS</a>
+          <a class="nav-item nav-link" href="file:///C:/Users/GWC/Documents/about.html">ABOUT</a>
+
+          <form class="form-inline">
+    </form>
+      <input type = "text" id = "search" rows = "1"  placeholder="Search for Books" class="form-control mr-sm-2"  onkeydown = "keyPress(event)" aria-label="Search"> </input>
+      <button id = "searchButton" class="btn btn-outline-success my-2 my-sm-0" onClick = "search();" type = "button">Search</button>
+        </div>
+      </div>
+    </nav>
+  </nav>
+
+
+  <span id="entire">
+
+  </span>
+
+
+
+
+
+  <br>
+  <br>
+  <footer>
+    <p class = "footer">
+      This website uses the <a href = "https://developers.google.com/books/">Google Books API</a>
+    </p>
+  </footer>
+
+
+
+  </body>
+
+  </html>

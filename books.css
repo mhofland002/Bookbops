@@ -1,0 +1,142 @@
+.container {
+  display: flex; /* or inline-flex */
+   flex-direction: row;
+}
+
+.card  {
+    border: 1px solid white;
+    border-radius: .25rem;
+}
+.item {
+  order:3; /* default is 0 */
+  flex-shrink:1;
+  flex-basis: auto;
+  flex: 'flex-grow'
+}
+.container1 {
+  display: flex; /* or inline-flex */
+  flex-direction: column;
+}
+
+.container2 {
+  position: relative;
+  width: 45%;
+}
+
+.image {
+  display: block;
+  width: 175px;
+  height: auto;
+  padding-left: 60px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 75%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #c3d7db;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.column{
+  float: center;
+  width: 20%;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.button {
+  border: black;
+  color: white;
+  text-align: right;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+
+.title {
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+.login {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+#search {
+  padding-left:300px;
+  padding-right:300px;
+  border-color: #BA5624;
+}
+#searchButton {
+  border-color: #BA5624;
+  color: black;
+  border-radius: 16px;
+}
+#searchButton:hover{
+  background-color: #E2DED8;
+}
+.nav-item:hover {
+  background-color:#E2DED8;
+}
+.footer {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+}
+#dropdownMenu2 {
+  border-color: #BA5624;
+  color: black;
+  border-radius: 16px;
+  background-color: white;
+}
+.dropdown-menu:hover{
+  background-color:#E2DED8;
+}
+.modalBtn{
+  border-color: #BA5624;
+  color: black;
+  border-radius: 16px;
+  background-color: white;
+}
+.modalBtn:hover{
+  background-color:#E2DED8;
+}
+#modalClose:hover{
+  background-color:#E2DED8;
+}
+.modal-title {
+  text-align: center;
+  padding-right: 30px;
+}
